@@ -1,0 +1,701 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    overflow-x: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+/* _______CONTAINER________ */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* _________________________ */
+
+
+
+
+
+/* __________HEADER__________ */
+
+header {
+    position: relative;
+    background-image: url(../rescources/john-westrock-638048-unsplash.jpg);
+    height: 1200px;
+    background-size: cover;
+    z-index: -1;
+}
+
+nav {
+    
+}
+
+nav ul {
+    margin-top: 30px;
+}
+
+nav ul li{
+    float: left;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 49px;
+}
+
+nav ul li a:hover {
+    color: #25372C;
+}
+
+header .logo{
+    margin-top: 30px;
+    margin-left: 70px;
+    font-size: 49px;
+    display: inline-block;
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+}
+
+header .logo:hover {
+    color: #AA33FF;
+}
+
+nav {
+    float: right;
+}
+
+#clouds {
+    position: absolute;
+    height: 894px;
+    width: 100%;
+    background-image: url(../rescources/cloud-top.png);
+    background-size: cover;
+    bottom: 0px;
+    transform: rotate(180deg);
+}
+
+#fading {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 98%);
+    height: 500px;
+    width: 100%;
+}
+
+/* _____________BODY______________ */
+
+section {
+    min-height: 100px;
+    /* border: 1px solid black; */
+}
+
+/* ABOUT US */
+
+#about_us {
+    display: grid;
+    grid-template-columns: 447px 1fr;
+    grid-template-rows: auto auto;
+    margin-top: -930px;
+}
+
+#join_our_camp {
+    position: relative;
+    width: 447px;
+    height: 482px;
+    background: #25372C;
+    text-align: center;
+}
+
+#about_us p{
+    font-size: 18px;
+    font-weight: 100; 
+    column-count: 2;
+    column-gap: 3%;
+    text-align: justify;
+    line-height: 34px;
+    margin-left: 3%;
+}
+
+#aboutus_form input,select,button {
+    width: 90%;
+    border: none;
+    height: 36px;
+    margin-bottom: 10px;
+}
+
+#aboutus_form {
+    position: absolute;
+    bottom: 10px;
+}
+
+.btn_yellow {
+    background: yellow;
+    font-size: 34px;
+    color: #25372C;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 34px;
+}
+
+#join_our_camp h2{
+    font-family: 'Passion One', cursive;
+    font-size: 107px;
+    width: 100%;
+    color:white;
+    margin-top: -50px;
+}
+
+#join_image {
+    height: auto;
+    grid-column: 1 / -1;  
+    margin-left: -129px;
+    margin-bottom: -3px;
+}
+
+
+/* CATEGORIES */
+
+#categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin-top: 30px;
+}
+
+#category {
+    -webkit-mask-image: url(../rescources/category_bg-01.svg);
+    mask-image: url(../rescources/category_bg-01.svg);
+    width: 285px;
+    height: 254px;
+    /* background-image: url(../rescources/category_bg-01.svg);
+    background-repeat: no-repeat;
+    background-position: bottom; */  
+    text-align: center;
+}
+
+.category_hover:hover{
+    background: #25372C;
+    color: black;
+}
+
+.novice {
+    background: #B23F24;
+}
+
+.amateur {
+    background: #B2B212;
+}
+
+.semipro {
+    background: #128AB2;
+}
+
+.master {
+    background: #AA33FF;
+}
+
+#category span {
+    display: block;
+}
+
+.big_text {
+    margin-top: 55px;
+    font-size: 45px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+}
+
+.small_text {
+    font-size: 28px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: white;
+}
+
+#category p {
+    /* margin-top: 20px; */
+    margin:15px auto;
+    width: 200px;
+    font-size: 15px;
+    color: white;
+    font-weight: 100; 
+}
+
+.black_btn {
+    margin-top: 0px;
+    background: #25372C;
+    color: white;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: bolder;
+    line-height: 34px;
+}
+
+/* STORIES */
+
+#stories {
+    margin-top: 30px;
+    /* max-height: 2700px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto;
+    
+    grid-gap: 10px;
+    
+}
+
+#header_stories {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 78px auto;
+    grid-template-areas: 
+        'sh sh bd'
+        'hd hd bd'
+        '. . bd';
+}
+
+#header_stories img {
+    display: inline-block;
+    bottom: -3px;
+    position: relative;
+}
+
+#all_stories {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    margin-top: -343px;
+    grid-template-areas: 
+        'st st .'
+}
+
+#stories_header_image {
+    grid-area: bd;
+    height: 100%;
+}
+
+.header_bg {
+    grid-area: hd;
+    /* grid-column: 1 / -1; */
+    width:100%;
+    height: 78px;
+    background: #25372C;
+    padding: 20px;
+    line-height: 38px;
+}
+
+.header_bg img {
+    margin-top: -150px;
+}
+
+.story{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    border: 2px solid rgb(80, 80, 80);
+    padding: 10px;
+    max-height: 344px;
+}
+
+.dummy {
+    border: none;
+}
+
+.story img {
+    display: block;
+    width: 100%;
+}
+
+.story_title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #25372C;
+    margin-top: 10px;
+    line-height: 22px;
+}
+
+.story_content {
+    text-indent: 10%;
+    font-size: 15px;
+    color: #25372C;
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 16px;
+}
+
+.story a {
+    
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #B23F24;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: end;
+}
+
+#story_details {
+    display: grid;
+}
+
+#rating_story {
+    margin-top: 15px;
+    
+}
+
+#rating_story span {
+    display: inline-block;
+    color: rgba(255,255,255,0);
+    font-size: 25px;
+    line-height: 35px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #B2B212;
+}
+
+#rating_story span:hover {
+    color: #B2B212;
+    cursor: pointer;
+}   
+
+#load_more_stories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        '. btn .';
+    grid-column: 1 / -1;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%);
+    height: 450px;
+    width: 100%;
+    margin-top: -430px;
+}
+
+.load_stories {
+    align-self: flex-end;
+    justify-self: center;
+    grid-column: 1 / -1;
+    grid-area: btn;
+}
+
+
+/* CONTACT */
+
+#contact {
+    position: relative;
+    z-index: 20;
+    width: 100%;
+    height: 1829px;
+    margin-top: 20px;
+    background:url(../rescources/contact_bg.jpg);
+    background-size: cover;
+}
+
+.container_contact {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#testimonials {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: auto;
+}
+
+#testimonials_header {
+    margin: 500px 0;
+    text-transform: uppercase;
+    /* transform-origin: 100% 100%; */
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 135px;
+    font-weight: bolder;
+    color: #25372C;
+    font-family: 'Passion One', cursive;
+}
+
+#testimonials_field {
+    padding: 250px 0;
+    height: 500px;
+    display: grid;
+    justify-items: end;
+    
+}
+
+#current_review {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    text-align: center;
+    width: 380px;
+    justify-items: center;
+    width: 380px;
+    height: 392px;
+    /* -webkit-mask-image: -webkit-gradient(linear, left 90%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); */
+}
+
+#current_review img {
+    border-radius: 50%;
+}
+
+#current_review span {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    color: #25372C;
+}
+
+#current_review p {
+    margin-top: 25px;
+    font-style: italic;
+    font-size: 17px;
+    color: #25372C;
+}
+
+.previous_review {
+    -webkit-mask-image: linear-gradient(to bottom, transparent 50%, black 100%);
+    mask-image: linear-gradient(to bottom, transparent 50%, black 100%);
+    opacity: .7;
+}
+
+.next_review {
+    -webkit-mask-image: linear-gradient(to top, transparent 50%, black 100%);
+    mask-image: linear-gradient(to top, transparent 50%, black 100%);
+    opacity: .3;
+}
+
+.arrow {
+    height: 70px;
+    width: 70px;
+    border-color: #25372C;
+    border-style: solid;
+    transform: rotate(45deg);
+    z-index: 2;
+}
+
+.down {
+    margin-bottom: -250px;
+    margin-right: 155px;
+    border-width: 0 12px 12px 0;
+}
+
+.up {
+    margin-top: -70px;
+    margin-right: 155px;
+    border-width: 12px 0 0 12px;
+}
+
+.up:hover {
+    border-color:#B2B212;
+    cursor: pointer;
+}
+
+.down:hover {
+    border-color:#B2B212;
+    cursor: pointer;
+}
+
+#form_contact {
+    justify-self: end;
+    align-self: center;
+    align-items: flex-end;
+    width: 457px;
+    
+    /* background: #25372C; */
+    text-align: center;
+    padding: 20px 0;
+}
+
+#contact_form input,select,button, textarea {
+    width: 90%;
+    border: none;
+    height: 36px;
+    margin-bottom: 25px;
+}
+
+#contact_form textarea {
+    height: 315px;
+}
+
+#form_top {
+    height: 250px;
+    background: #25372C;
+}
+
+#form_top span {
+    font-family: 'Passion One', cursive;
+    position: relative;
+    color: white;
+    font-weight: bolder;
+    font-size: 92px;
+    top: -40px;
+}
+
+#form_trees {
+    margin-bottom: -15px;
+    height: 180px;
+    width: 100%;
+}
+
+#contact_form {
+    background: #25372C;
+}
+
+/* ----FOOTER---- */
+
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    position: absolute;
+    z-index: 100;
+    bottom: 90px;
+    height: 90px;
+    width: 100%;
+}
+
+#leftside_footer {
+    height: 100%;
+    background: #25372C;
+}
+
+#rightside_footer {
+    font-size: 70px;
+    display: inline-block;
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+    color: white;
+    line-height: 70px;
+    margin-left: 40px;
+    margin-top: 8px;
+}
+
+
+
+/* -------------------------------------- */
+/* --------------RESPONSIVE-------------- */
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    header {
+        display: grid;
+        position: relative;
+        background-image: url(../rescources/john-westrock-638048-unsplash.jpg);
+        width: 100%;
+        height: 1200px;
+        
+        background-size: cover;
+        z-index: -1;
+    }
+    #categories {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        align-items: center;
+    }
+    #about_us {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #join_image img {
+        display: none;
+    }
+    #stories {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #all_stories {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'st'
+    }
+    #stories_header_image {
+        display: none;
+    }
+    .container_contact {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
